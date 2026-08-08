@@ -1,0 +1,18 @@
+body{
+background:#202124;
+font-family:Arial;
+color:white;
+}
+
+.container{
+text-align:center;
+padding:40px;
+}
+
+.card{
+width:300px;
+margin:auto;
+border:1px solid gray;
+padding:25px;
+border-radius:10px;
+}

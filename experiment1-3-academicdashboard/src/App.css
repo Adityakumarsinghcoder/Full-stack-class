@@ -1,0 +1,49 @@
+body{
+background:#202124;
+color:white;
+font-family:Arial;
+}
+
+.header{
+text-align:center;
+padding:15px;
+}
+
+.main{
+display:flex;
+}
+
+.sidebar{
+width:180px;
+padding:20px;
+}
+
+.student{
+border:1px solid gray;
+padding:20px;
+margin:15px;
+border-radius:8px;
+}
+.dashboard {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.show-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #444;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-btn:hover {
+  background-color: #666;
+}
+
+.student-list {
+  margin-top: 15px;
+}
