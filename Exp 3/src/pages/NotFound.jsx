@@ -1,95 +1,63 @@
-import React from "react";
-import { useNavigate } from "react-router";
+import { Link } from "react-router";
 
 function NotFound() {
-  const navigate = useNavigate();
-
   const styles = {
-    page: {
-      minHeight: "100vh",
+    container: {
+      height: "100vh",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      background: "linear-gradient(135deg, #eef2ff, #f8fafc, #ede9fe)",
-      fontFamily: "Arial, sans-serif",
+      background: "linear-gradient(135deg, #667eea, #764ba2)",
+    },
+    card: {
+      backgroundColor: "#fff",
+      padding: "50px",
+      borderRadius: "15px",
       textAlign: "center",
-      padding: "20px",
+      boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
+      maxWidth: "450px",
+      width: "90%",
     },
-
-    container: {
-      backgroundColor: "#ffffff",
-      padding: "50px 40px",
-      borderRadius: "20px",
-      boxShadow: "0 15px 40px rgba(0, 0, 0, 0.12)",
-      maxWidth: "500px",
-      width: "100%",
+    heading: {
+      fontSize: "90px",
+      color: "#2563eb",
+      margin: 0,
     },
-
-    errorCode: {
-      fontSize: "100px",
-      fontWeight: "bold",
-      color: "#4f46e5",
-      margin: "0",
-      lineHeight: "1",
+    subHeading: {
+      fontSize: "32px",
+      color: "#333",
+      margin: "10px 0",
     },
-
-    title: {
-      fontSize: "30px",
-      color: "#1e293b",
-      marginTop: "20px",
-      marginBottom: "10px",
-    },
-
-    message: {
-      fontSize: "16px",
-      color: "#64748b",
+    text: {
+      color: "#666",
       lineHeight: "1.6",
       marginBottom: "30px",
     },
-
     button: {
-      backgroundColor: "#4f46e5",
-      color: "#ffffff",
-      border: "none",
-      padding: "13px 25px",
-      fontSize: "16px",
-      fontWeight: "600",
+      display: "inline-block",
+      padding: "12px 24px",
+      backgroundColor: "#2563eb",
+      color: "#fff",
+      textDecoration: "none",
       borderRadius: "8px",
-      cursor: "pointer",
+      fontSize: "16px",
     },
-
-    icon: {
-      fontSize: "55px",
-      marginBottom: "15px",
-    },
-  };
-
-  const goHome = () => {
-    navigate("/");
   };
 
   return (
-    <div style={styles.page}>
-      <div style={styles.container}>
+    <div style={styles.container}>
+      <div style={styles.card}>
+        <h1 style={styles.heading}>404</h1>
 
-        <div style={styles.icon}>🔍</div>
+        <h2 style={styles.subHeading}>Page Not Found</h2>
 
-        <h1 style={styles.errorCode}>404</h1>
-
-        <h2 style={styles.title}>Page Not Found</h2>
-
-        <p style={styles.message}>
-          Sorry, the page you are looking for does not exist
-          or may have been moved.
+        <p style={styles.text}>
+          Sorry, the page you are looking for doesn't exist or has been moved.
         </p>
 
-        <button
-          style={styles.button}
-          onClick={goHome}
-        >
-          Go Back Home
-        </button>
-
+        <Link to="/login" style={styles.button}>
+          ← Go Back Home
+        </Link>
       </div>
     </div>
   );

@@ -1,94 +1,123 @@
-const students = [
-  {
-    id: 1,
-    name: "Aarav Sharma",
-    email: "aarav.sharma@example.com",
-    phone: "9876543210",
-    status: "Active",
-    grade: "A",
-    course: "Computer Science"
-  },
-  {
-    id: 2,
-    name: "Priya Verma",
-    email: "priya.verma@example.com",
-    phone: "9812345678",
-    status: "Active",
-    grade: "A+",
-    course: "Information Technology"
-  },
-  {
-    id: 3,
-    name: "Rohan Singh",
-    email: "rohan.singh@example.com",
-    phone: "9123456780",
-    status: "Inactive",
-    grade: "B+",
-    course: "Mechanical Engineering"
-  },
-  {
-    id: 4,
-    name: "Ananya Gupta",
-    email: "ananya.gupta@example.com",
-    phone: "9988776655",
-    status: "Active",
-    grade: "A",
-    course: "Computer Science"
-  },
-  {
-    id: 5,
-    name: "Karan Mehta",
-    email: "karan.mehta@example.com",
-    phone: "9098765432",
-    status: "Active",
-    grade: "B",
-    course: "Civil Engineering"
-  },
-  {
-    id: 6,
-    name: "Sneha Patel",
-    email: "sneha.patel@example.com",
-    phone: "9871234560",
-    status: "Inactive",
-    grade: "B+",
-    course: "Electronics Engineering"
-  },
-  {
-    id: 7,
-    name: "Arjun Kumar",
-    email: "arjun.kumar@example.com",
-    phone: "9765432109",
-    status: "Active",
-    grade: "A+",
-    course: "Computer Science"
-  },
-  {
-    id: 8,
-    name: "Neha Kapoor",
-    email: "neha.kapoor@example.com",
-    phone: "9654321098",
-    status: "Active",
-    grade: "A",
-    course: "Information Technology"
-  },
-  {
-    id: 9,
-    name: "Rahul Yadav",
-    email: "rahul.yadav@example.com",
-    phone: "9543210987",
-    status: "Inactive",
-    grade: "C+",
-    course: "Electrical Engineering"
-  },
-  {
-    id: 10,
-    name: "Ishita Malhotra",
-    email: "ishita.malhotra@example.com",
-    phone: "9432109876",
-    status: "Active",
-    grade: "A+",
-    course: "Computer Science"
-  }
-];
-
+ const students = [
+    {
+        id: 1,
+        name: "Aarav Sharma",
+        email: "aarav.sharma@example.com",
+        phone: "9876543210",
+        address: "Sector 22, Chandigarh",
+        status: "Active",
+        grade: "A",
+        course: "MERN Stack",
+        age: 22,
+        image: "https://i.pravatar.cc/150?img=11"
+    },
+    {
+        id: 2,
+        name: "Priya Verma",
+        email: "priya.verma@example.com",
+        phone: "9876543211",
+        address: "Rajouri Garden, New Delhi",
+        status: "Active",
+        grade: "B+",
+        course: "React.js",
+        age: 21,
+        image: "https://i.pravatar.cc/150?img=12"
+    },
+    {
+        id: 3,
+        name: "Rohan Singh",
+        email: "rohan.singh@example.com",
+        phone: "9876543212",
+        address: "Vaishali Nagar, Jaipur",
+        status: "Inactive",
+        grade: "A+",
+        course: "Node.js",
+        age: 23,
+        image: "https://i.pravatar.cc/150?img=13"
+    },
+    {
+        id: 4,
+        name: "Sneha Gupta",
+        email: "sneha.gupta@example.com",
+        phone: "9876543213",
+        address: "Indirapuram, Ghaziabad",
+        status: "Active",
+        grade: "A",
+        course: "Java Full Stack",
+        age: 24,
+        image: "https://i.pravatar.cc/150?img=14"
+    },
+    {
+        id: 5,
+        name: "Aditya Kumar",
+        email: "aditya.kumar@example.com",
+        phone: "9876543214",
+        address: "Boring Road, Patna",
+        status: "Pending",
+        grade: "B",
+        course: "Python",
+        age: 22,
+        image: "https://i.pravatar.cc/150?img=15"
+    },
+    {
+        id: 6,
+        name: "Neha Joshi",
+        email: "neha.joshi@example.com",
+        phone: "9876543215",
+        address: "Hazratganj, Lucknow",
+        status: "Active",
+        grade: "A-",
+        course: "Data Structures",
+        age: 20,
+        image: "https://i.pravatar.cc/150?img=16"
+    },
+    {
+        id: 7,
+        name: "Karan Mehta",
+        email: "karan.mehta@example.com",
+        phone: "9876543216",
+        address: "Andheri West, Mumbai",
+        status: "Inactive",
+        grade: "C+",
+        course: "C++",
+        age: 25,
+        image: "https://i.pravatar.cc/150?img=17"
+    },
+    {
+        id: 8,
+        name: "Ananya Roy",
+        email: "ananya.roy@example.com",
+        phone: "9876543217",
+        address: "Salt Lake, Kolkata",
+        status: "Active",
+        grade: "A+",
+        course: "Angular",
+        age: 21,
+        image: "https://i.pravatar.cc/150?img=18"
+    },
+    {
+        id: 9,
+        name: "Vikram Patel",
+        email: "vikram.patel@example.com",
+        phone: "9876543218",
+        address: "Navrangpura, Ahmedabad",
+        status: "Pending",
+        grade: "B-",
+        course: "MongoDB",
+        age: 23,
+        image: "https://i.pravatar.cc/150?img=19"
+    },
+    {
+        id: 10,
+        name: "Meera Nair",
+        email: "meera.nair@example.com",
+        phone: "9876543219",
+        address: "Kakkanad, Kochi",
+        status: "Active",
+        grade: "A",
+        course: "Express.js",
+        age: 22,
+        image: "https://i.pravatar.cc/150?img=20"
+    }
+ ];
 export default students;
